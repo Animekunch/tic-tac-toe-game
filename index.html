@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Animekunch" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tic tac toe game</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <!--starting page-->
+      <div id="startingPage">
+        <h2>Tic Tac Toe Game</h2>
+        <div id="line"></div>
+        <h4>Choose Your Player</h4>
+        <div id="button">
+          <button class="choose" id="playerX">Player X</button>
+          <button class="choose" id="playerO">Player O</button>
+        </div>
+      </div>
+      <!--Game-->
+      <div id="mainPage">
+        <div id="headerBtns">
+          <button id="X_turn">X</button>
+          <button id="O_turn">O</button>
+          <div id="showChange"></div>
+        </div>
+        <div id="gameBoard">
+          <div class="boxes"></div>
+          <div class="boxes"></i></div>
+          <div class="boxes"></div>
+          <div class="boxes"></div>
+          <div class="boxes"></div>
+          <div class="boxes"></div>
+          <div class="boxes"></div>
+          <div class="boxes"></div>
+          <div class="boxes"></div>
+        </div>
+      </div>
+      <!--result page-->
+      <div id="winner">
+        <h2 id="winnerName">Player wins</h2>
+        <div id="button">
+          <button id="playagain">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

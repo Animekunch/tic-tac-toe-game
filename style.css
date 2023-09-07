@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, ;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #171a25;
+}
+
+#container {
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom, #4c1749, 10%, #171a25);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 1px 2px 0px rgba(193, 15, 199, 0.18),
+        inset -2px -2px 2px #3a4260;
+}
+
+#startingPage {
+    height: 220px;
+    width: 400px;
+}
+
+#startingPage h2,
+#winner h2 {
+    font-size: 50px;
+    color: #c3cfdb;
+}
+
+#startingPage #line {
+    height: 1px;
+    width: 100%;
+    background: #401d53;
+    margin: 20px 0;
+}
+
+#startingPage h4 {
+    font-size: 25px;
+    color: #27bc79;
+}
+
+#startingPage #button {
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#button button {
+    height: 55px;
+    width: 180px;
+    cursor: pointer;
+    background: #2a0b28;
+    border: none;
+    outline: none;
+    color: aqua;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: inset 1px 2px 0px rgba(193, 15, 199, 0.18),
+        inset -2px -2px 2px #3a4260;
+}
+
+#button button:first-child {
+    margin-right: 40px;
+}
+
+#startingPage #button button:hover,
+#winner #button button:hover {
+    transform: scale(0.9);
+}
+
+#winner {
+    display: none;
+}
+
+#winner #button {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#winner #button button {
+    margin-top: 20px;
+}
+
+#mainPage {
+    height: 550px;
+    width: 350px;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+
+#mainPage #headerBtns {
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: inset 1px 2px 0px rgba(193, 15, 199, 0.18),
+        inset -2px -2px 2px #3a4260;
+}
+
+#mainPage #headerBtns button {
+    height: 59px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-shadow: 1px 1px 1px rbg(0, 0, 0, 0.6);
+}
+
+#mainPage #headerBtns #O_turn {
+    left: 160px;
+    z-index: 3;
+}
+
+#showChange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background: rgb(139, 53, 176);
+    z-index: 1;
+    transition: 0.2s;
+}
+
+#gameBoard {
+    height: 400px;
+    width: 330px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+
+}
+
+.boxes {
+    height: 100px;
+    width: 100px;
+    display: grid;
+    box-shadow: 2px 2px 2px rgba(112, 161, 191, 0.25), -2px -2px 5px rgba(0, 0, 0, 87%);
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxes {
+    font-size: 60px;
+    color: violet;
+}
